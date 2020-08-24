@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./index.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+  <header class="header">
+    <section class="title">
+      <div class="options">
+        <p class='game-name'> Rock</p>
+        <p class='game-name'> Paper</p>
+        <p class='game-name'> Scissors</p>
+      </div>
+    
+      <div class="score-box">
+        <p class="score-title">Score </p>
+        <h3 id ='score-number'></h3>
+      </div>
+     
+    </section>
+  </header>  
+  <main class="meatNBones">
+    <section class="field-of-play">
+      <div class = 'paper-wrapper'>
+        <img id = 'paper' src="./images/icon-paper.svg">
+      </div>
+      <div class="scissors-wrapper">
+        <img id = 'scissors' src="./images/icon-scissors.svg">
+      </div>
+      <div class="rock-wrapper">
+        <img id = 'rock' src="./images/icon-rock.svg">
+      </div>  
+    </section>
+  
+    <div class="choices hide">
+      <div id='human-win' class="choice" >
+      
+        <div id="hpick-wrapper">
+          <img id = 'human-pick' src=''>
+        </div>
+        <p class="pick">You Picked</p>
+      </div>
+      <div id='cpu-win' class="choice">
+      
+        <div id='cpick-wrapper'>
+          <img id = 'comp-pick' src=''>
+        </div>
+        <p class="pick">The House Picked</p>
+      </div>
+    </div>
+    <div class="final-text">  
+      <h1 id="results"></h1>
+      <button id ='play-again-btn' class ='play-again hide'>Play Again</button>
+    </div>
+  </main>   
+    <div id='modal' class="modal hide">
+      <h3 class="rules-text">Rules</h4>
+      <p class="rules-explained">Choose Rock, Paper, or Scissors.</p>
+      <p class="basic-rule">Rock beats Scissors, Scissors beats Paper, Paper beats Rock.</p>
+      <button id ='close-btn' class="close-modal">Close</button>
+    </div>
+
+  <footer class="end">
+    <button id="rules" class="rules">Rules</button>
+  </footer>  
+
+
+
+
+  
+<script src="./index.js"></script>  
+</body>
+</html>
